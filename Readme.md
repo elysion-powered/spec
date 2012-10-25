@@ -12,7 +12,7 @@ When implementing this specification, it is recommended to use a language that s
 Components
 ---
 
-* Scene Management
+* [Scene Management](SceneManagement.md)
 * Entity Management
 * Asset Management
 
