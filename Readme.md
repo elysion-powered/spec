@@ -4,9 +4,7 @@ Elysion Specification
 General
 ---
 
-This is a specification for a game engine. These documents are not specific to any programming language.
-
-When implementing this specification, it is recommended to use a language that supports properties, while this is certainly not a must.
+This is a specification for a game engine. These documents are not specific to any programming language or platform.
 
 
 Components
