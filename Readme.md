@@ -6,6 +6,8 @@ General
 
 This is a specification for a game engine. These documents are not specific to any programming language or platform.
 
+While function definitions in this specification are typically written in `camelCase`, this depends on the programming language and its code guidelines. (Let's say, if someone were to implement the specification in C# or Delphi, it's definitely ok and even recommended to have the function definitions in `PascalCase`.)
+
 
 Components
 ---
