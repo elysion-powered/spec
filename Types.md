@@ -5,10 +5,10 @@ Color
 ---
 A color consists of:  
 
-- R (Range: 0 - 255)  
-- G (Range: 0 - 255)  
-- B (Range: 0 - 255)  
-- A (Range: 0 - 255)
+- R (Range: 0 - 255 | Default value: 0)  
+- G (Range: 0 - 255 | Default value: 0)  
+- B (Range: 0 - 255 | Default value: 0)  
+- A (Range: 0 - 255 | Default value: 255)
 
 The color object also provides static functions to create instance of the color object which are CSS 2.1 compatible colors:
 
@@ -17,6 +17,15 @@ The color object also provides static functions to create instance of the color 
 - Blue
 - Yellow
 - etc.
+
+An instance of color is set to have the following functions:
+
+- `toString`: Converts the color object into a CSS color compatible rgb/rgba - string. If the alpha value is different than 255, it will be written as `alpha / 255`. For example a color object with r: 255, g: 255, b: 0 will return `rgb(255, 255, 0)`, whereas a color object with r: 255, g: 255, b: 0, a: 128 will return `rgba(255, 255, 0, 0.5)` 
+- `toHex`: Converts the color object into a hex color string (e.g. `#ffffff`) while ignoring the alpha value
+- `lighten`
+- `darken`
+- `fadeIn`
+- `fadeOut`
 
 Rect
 ---
@@ -45,6 +54,14 @@ If the programming language that supports static typing, an implementation of ve
 	class Vector2f //< A two-dimensional (X, Y) vector for float values
 	class Vector3i //< A three-dimensional (X, Y, Z) vector for integer values
 	class Vector3f //< A three-dimensional (X, Y, Z) vector for float values
+
+A vector instance has to implement these functions:
+
+- Arithmetic functions: Arithmetic function can either be implemented through operator overloading if the programming language supports it or through seperate functions:
+	- `add`
+	- `subtract`
+	- `multiply`
+	- `divide`
 
 Size
 ---
