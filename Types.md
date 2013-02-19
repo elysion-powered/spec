@@ -48,6 +48,7 @@ A Rect instance also has to has the following functions:
 Vector
 ---
 
+It is recommended, although not required to have classes for each a two-dimensional and a three-dimensional vector.
 If the programming language that supports static typing, an implementation of vector types could look like this:
 
 	class Vector2i //< A two-dimensional (X, Y) vector for integer values
