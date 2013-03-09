@@ -9,10 +9,10 @@ the following:
 
 An examplary setup might be:
 ``
-/
-|- assets
-   |- images
-   |- sounds
-   |- data
-|- src
+/  
+|- assets  
+   |- images  
+   |- sounds  
+   |- data  
+|- src  
 ``
