@@ -26,3 +26,5 @@ An example scene might look like this:
   }]
 }
 ```
+
+Any node or scene is able to load this JSON and update its logic accordingly.
