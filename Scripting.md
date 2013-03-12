@@ -27,3 +27,9 @@ do (gameObject = @) ->
   @on 'update', (dt) ->
     gameObject.rotate 3.0 * dt
 ```
+
+This example will cause the game object to rotate each frame.
+
+
+Additionally to game objects, scenes can be scripted as well. It should provide the flexibility to write a whole game
+in the scripting engine, but developers are not forced to do so at all.
