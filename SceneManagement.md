@@ -15,6 +15,9 @@ The scene has to provide following functions:
 * Rendering the graphical components of a scene
 * Updating the behaviour of each component
 
+In its essence, a scene is a special kind of game object. It does have a visual representation, but it cannot have any
+behaviours on itself.
+
 Definition of a scene director
 ---
 
