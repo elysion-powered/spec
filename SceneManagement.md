@@ -12,11 +12,14 @@ whereas the options screen is a different scene as well as each level of the gam
 scene.
 
 The scene has to provide following functions:
+
 * Rendering the graphical components of a scene
 * Updating the behaviour of each component
 
 In its essence, a scene is a special kind of game object. It does have a visual representation, but it cannot have any
 behaviours on itself.
+
+A scene additionally features a GUI Layer, a specifically seperated layer for the purpose of grouping GUI elements without interfering with the game visualization and logic.
 
 Definition of a scene director
 ---
