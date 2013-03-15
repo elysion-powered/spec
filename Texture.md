@@ -6,3 +6,5 @@ It in its core, a texture is basically a behaviour which attached to a entity ma
 A texture needs the following functions:
 * loadFromFile
 * pixels[x][y] <-- provides read access to any pixel of the texture
+
+As soon as the texture is loaded, the pixels are written to the array which then can be accessed.
