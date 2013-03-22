@@ -21,7 +21,7 @@ The color object also provides static functions to create instance of the color 
 An instance of color is set to have the following functions:
 
 - `toString`: Converts the color object into a CSS color compatible rgb/rgba - string. If the alpha value is different than 255, it will be written as `alpha / 255`. For example a color object with r: 255, g: 255, b: 0 will return `rgb(255, 255, 0)`, whereas a color object with r: 255, g: 255, b: 0, a: 128 will return `rgba(255, 255, 0, 0.5)` 
-- `toHex`: Converts the color object into a hex color string (e.g. `#ffffff`) while ignoring the alpha value. If 
+- `toHex`: Converts the color object into a hex color string (e.g. `#ffffff`) while ignoring the alpha value. If the value is `#ffffff`, it should be written as `#fff`
 - `lighten`: Lightens the color by the given percentage
 - `darken`: Darkens the color by the given percentage
 - `fadeIn`: Modifies the alpha value by the given percentage to be more opaque
