@@ -5,27 +5,27 @@ Color
 ---
 A color consists of:  
 
-- R (Range: 0 - 255 | Default value: 0)  
-- G (Range: 0 - 255 | Default value: 0)  
-- B (Range: 0 - 255 | Default value: 0)  
-- A (Range: 0 - 255 | Default value: 255)
+- `r` (The red aspect of a color - Range: 0 - 255 | Default value: 0)  
+- `g` (The green aspect of a color - Range: 0 - 255 | Default value: 0)  
+- `b` (The blue aspect of a color - Range: 0 - 255 | Default value: 0)  
+- `a` (The alpha aspect of a color -Range: 0 - 255 | Default value: 255)
 
 The color object also provides static functions to create instance of the color object which are CSS 2.1 compatible colors:
 
-- Black
-- White
-- Blue
-- Yellow
+- `black`
+- `white`
+- `blue`
+- `yellow`
 - etc.
 
 An instance of color is set to have the following functions:
 
 - `toString`: Converts the color object into a CSS color compatible rgb/rgba - string. If the alpha value is different than 255, it will be written as `alpha / 255`. For example a color object with r: 255, g: 255, b: 0 will return `rgb(255, 255, 0)`, whereas a color object with r: 255, g: 255, b: 0, a: 128 will return `rgba(255, 255, 0, 0.5)` 
-- `toHex`: Converts the color object into a hex color string (e.g. `#ffffff`) while ignoring the alpha value
-- `lighten`
-- `darken`
-- `fadeIn`
-- `fadeOut`
+- `toHex`: Converts the color object into a hex color string (e.g. `#ffffff`) while ignoring the alpha value. If 
+- `lighten`: Lightens the color by the given percentage
+- `darken`: Darkens the color by the given percentage
+- `fadeIn`: Modifies the alpha value by the given percentage to be more opaque
+- `fadeOut`: Modifies the alpha value by the given percentage to be less opaque
 
 Rect
 ---
