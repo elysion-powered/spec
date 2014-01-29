@@ -18,3 +18,4 @@ An examplary setup might be:
 ```
 
 
+Asset groups can be defined and used with conditionals, like say load full-hd images on full HD screens and lower resolutions for mobile phones.
